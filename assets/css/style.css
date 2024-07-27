@@ -1,0 +1,121 @@
+body {
+  background: black;
+}
+
+.navbar.scrolled {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.nav-link {
+  text-transform: uppercase;
+  color: #aaa;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: #0d6efd;
+}
+
+.nav-link.active {
+  color: #0d6efd !important;
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  height: 2px;
+  background: #0d6efd;
+  width: 80%;
+  bottom: 0;
+  left: 10%;
+}
+
+.carousel-item {
+  height: 100vh;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  height: 200%;
+  width: auto;
+  opacity: 0.3;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.section-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: #0d6efd;
+  bottom: -10px;
+  left: 0;
+}
+
+#about {
+  background: white;
+}
+
+#counter {
+  background: url('../images/img_3.png');
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+#counter span {
+  font-size: 5rem;
+}
+
+#clients,
+#contact {
+  background: white;
+}
+
+.owl-carousel .item img {
+  width: 100px;
+}
+
+#faqs {
+  background: #eee;
+}
+footer {
+  color: white;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer ul li {
+  margin: 10px 0;
+}
+
+footer ul li,
+footer ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+  font-size: 2rem;
+}
+
+.social a {
+  color: white;
+}
