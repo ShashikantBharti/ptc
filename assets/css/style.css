@@ -45,6 +45,12 @@ body {
   opacity: 0.3;
 }
 
+.owl-carousel .item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .text-justify {
   text-align: justify;
 }
