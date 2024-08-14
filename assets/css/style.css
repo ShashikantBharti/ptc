@@ -1,54 +1,15 @@
 body {
   background: black;
 }
-
-.navbar.scrolled {
-  background-color: rgba(255, 255, 255, 0.8);
-  backdrop-filter: blur(10px);
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+.carousel {
+  max-height: 80vh;
+  /* overflow: clip; */
 }
 
-.nav-link {
-  text-transform: uppercase;
-  color: #aaa;
-  position: relative;
-}
-
-.nav-link:hover {
-  color: #0d6efd;
-}
-
-.nav-link.active {
-  color: #0d6efd !important;
-}
-
-.nav-link:hover::after,
-.nav-link.active::after {
-  content: '';
+.carousel-caption {
   position: absolute;
-  height: 2px;
-  background: #0d6efd;
-  width: 80%;
-  bottom: 0;
-  left: 10%;
-}
-
-.carousel-item {
-  height: 100vh;
-  overflow: hidden;
-}
-
-.carousel-item img {
-  height: 200%;
-  width: auto;
-  opacity: 0.3;
-}
-
-.owl-carousel .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 100px;
+  margin-top: -50%;
 }
 
 .text-justify {

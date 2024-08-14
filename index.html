@@ -17,8 +17,9 @@
 </head>
 
 <body>
+
   <!-- Navbar START -->
-  <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+  <nav class="navbar navbar-expand-lg bg-body-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="#">
         <img src="./assets/images/ptc_logo.png" alt="">
@@ -30,120 +31,122 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="#" id="home-nav">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link active" aria-current="page" href="#" id="about-nav">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Recruitment Process</a>
+            <a class="nav-link active" aria-current="page" href="#" id="process-nav">Recruitment Process</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link active" aria-current="page" href="#" id="services-nav">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Job Seekers</a>
+            <a class="nav-link active" aria-current="page" href="#" id="job-nav">Job Seekers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Clients</a>
+            <a class="nav-link active" aria-current="page" href="#" id="client-nav">Clients</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link active" aria-current="page" href="#" id="contact-nav">Contact Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <select id="language" class="form-select">
+              <option value="en" selected>English</option>
+              <option value="ar">عربي</option>
+            </select>
           </li>
         </ul>
-
       </div>
     </div>
   </nav>
   <!-- Navbar END -->
-  <!-- Hero Section START -->
-  <section id="hero">
-    <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
-          aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-      </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./assets/images/pic_1.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Welcome To <br> Premium Travel Consultant.</h1>
-              <p class="opacity-75">
-                At Premium Travel Consultant, we are dedicated to connecting top talent with
-                leading companies.
-              </p>
-              <p><a class="btn btn-lg btn-primary" href="#">Discover Our Services</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/pic_2.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Welcome To <br> Premium Travel Consultant.</h1>
-              <p>
-                Whether you are a job seeker looking for the perfect
-                opportunity or an employer seeking the best candidates.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Discover Our Services</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="./assets/images/pic_3.jpg" alt="">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Welcome To <br> Premium Travel Consultant.</h1>
-              <p>we are here to support your journey to success.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Discover Our Services</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+
+  <!-- Carousel START -->
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+        aria-label="Slide 4"></button>
     </div>
-
-
-  </section>
-  <!-- Hero Section END -->
+    <div class="carousel-inner">
+      <div class="carousel-item active"
+        style="background: url('./assets/images/pic_1.jpg'); background-size: cover; background-position: cover; min-height: 70vh;">
+        <!-- <img src="./assets/images/pic_1.jpg" class="d-block w-100" alt="..."> -->
+        <div class="carousel-caption d-none d-md-block">
+          <h1>Welcome To Premium Travel Consultant</h1>
+          <p>We are here to support your journey to success.</p>
+          <button class="btn btn-primary">Get Started</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/pic_2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/pic_3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./assets/images/pic_4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!-- Carousel END -->
 
   <!-- About Us START -->
   <section id="about" class="py-2 pb-4">
     <div class="container">
       <div class="text-center py-3">
-        <h2 class="section-heading mb-3">About Us</h2>
-        <p>
+        <h2 class="section-heading mb-3" id="about-heading">About Us</h2>
+        <p id="about-desc">
           We offer personalized recruitment and consultancy services <br>
           to meet your unique needs.
         </p>
       </div>
       <div class="row">
         <div class="col-md-6">
-          <h3>Who We Are</h3>
-          <p class="text-justify">
+          <h3 id="about-subheading1">Who We Are</h3>
+          <p class="text-justify" id="about-desc1">
             At Premium Travel Consultant, we specialize in bridging the gap
             between top-tier talent and exceptional employers. Founded
             in 2010, our mission is to empower individuals and organizations
             by providing expert recruitment and consultancy services tailored
             to their unique needs.
           </p>
-          <h3>Our Vision</h3>
-          <p class="text-justify">
+          <h3 id="about-subheading2">Our Vision</h3>
+          <p class="text-justify" id="about-desc2">
             To be the leading consultancy and recruitment agency known for
             our integrity, innovation, and impact in transforming careers and
             businesses.
           </p>
-          <h3>Our Mission</h3>
-          <p>
+          <h3 id="about-subheading3">Our Mission</h3>
+          <p class="text-justify" id="about-desc3">
             To connect the right people with the right opportunities, fostering
             growth and success for both job seekers and employers.
           </p>
@@ -155,27 +158,34 @@
           <img src="./assets/images/img_2.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-6 mt-4">
-          <h3>Our Values</h3>
+          <h3 id="about-subheading4">Our Values</h3>
           <ul class="list-unstyled mt-4">
             <li class="d-flex align-items-start mb-2">
               <i class="fas fa-check text-success me-2"></i>
-              <p><strong>Integrity:</strong> We uphold the highest standards of honesty and
-                ethics in all our interactions.</p>
+              <p><strong id="about-list-heading1">Integrity:</strong>
+                <span id="about-list-desc1">We uphold the highest standards of honesty and
+                  ethics in all our interactions.</span>
+              </p>
             </li>
             <li class="d-flex align-items-start mb-2">
               <i class="fas fa-check text-success me-2"></i>
-              <p><strong>Excellence:</strong> We strive for excellence in everything we do,
-                delivering superior services and results.</p>
+              <p><strong id="about-list-heading2">Excellence:</strong>
+                <span id="about-list-desc2">We strive for excellence in everything we do, delivering superior services
+                  and results.</span>
+              </p>
             </li>
             <li class="d-flex align-items-start mb-2">
               <i class="fas fa-check text-success me-2"></i>
-              <p><strong>Partnership:</strong>We build lasting relationships based on trust
-                and collaboration.</p>
+              <p><strong id="about-list-heading3">Partnership:</strong>
+                <span class="about-list-desc3">We build lasting relationships based on trust and collaboration.</span>
+              </p>
             </li>
             <li class="d-flex align-items-start mb-2">
               <i class="fas fa-check text-success me-2"></i>
-              <p><strong>Innovation: </strong>We embrace innovative solutions to meet the
-                evolving needs of our clients and candidates.</p>
+              <p><strong id="about-list-heading4">Innovation: </strong>
+                <span id="about-list-desc4">We embrace innovative solutions to meet the evolving needs of our clients
+                  and candidates.</span>
+              </p>
             </li>
           </ul>
         </div>
@@ -223,7 +233,7 @@
       <div class="text-center py-3">
         <h2 class="section-heading mb-3">Our Clients</h2>
         <p>
-          Our clients are satisfied with our services
+          We have worked with a diverse range of clients across various industries.
         </p>
       </div>
       <div class="row">
@@ -313,7 +323,7 @@
       <div class="text-center py-3">
         <h2 class="section-heading mb-3">Contact Us</h2>
         <p>
-          Feel Free To Contact Us
+          Get in touch with us to learn more about our services and how we can help
         </p>
       </div>
       <div class="row">
@@ -411,6 +421,7 @@
   <!-- Owl Carousel JS -->
   <script src="./assets/js/owl.carousel.min.js"></script>
   <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/content.js"></script>
 </body>
 
 </html>
