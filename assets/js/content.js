@@ -62,6 +62,11 @@ const translation = {
         'Submit',
       ],
     },
+    footer: {
+      heading: 'Premium Travel Consultant',
+      desc: 'At Premium Travel Consultant, we are dedicated to connecting top talent with leading companies.',
+      subheading: ['Quick Links', 'Subscribe Our Newsletter', 'Follow Us On:', 'Your Email'],
+    },
   },
   ar: {
     navbar: [
@@ -126,6 +131,11 @@ const translation = {
         'إرسال',
       ],
     },
+    footer: {
+      heading: 'مستشار السفر بريميوم',
+      desc: 'في مستشار السفر بريميوم، نحن ملتزمون بربط أفضل المواهب مع الشركات الرائدة.',
+      subheading: ['روابط سريعة', 'اشترك في نشرتنا الإخبارية', 'تابعنا على:', 'بريدك الإلكتروني'],
+    },
   },
 };
 
@@ -182,6 +192,27 @@ let ans3 = document.getElementById('ans3');
 // Contact
 let contactHeading = document.getElementById('contact-heading');
 let contactDesc = document.getElementById('contact-desc');
+let contactFirstNameLabel = document.getElementById('contact-label-first-name');
+let contactLastNameLabel = document.getElementById('contact-label-last-name');
+let contactEmailLabel = document.getElementById('contact-label-email');
+let contactMobileLabel = document.getElementById('contact-label-mobile');
+let contactMessageLabel = document.getElementById('contact-label-message');
+let contactSubmitBtnLabel = document.getElementById('contact-label-submit');
+
+// Footer
+let footerHeading = document.getElementById('footer-heading');
+let footerDesc = document.getElementById('footer-desc');
+let footerQuickLink = document.getElementById('footer-quick-links');
+let footerHome = document.getElementById('footer-home');
+let footerAbout = document.getElementById('footer-about');
+let footerProcess = document.getElementById('footer-process');
+let footerServices = document.getElementById('footer-services');
+let footerJob = document.getElementById('footer-job');
+let footerClients = document.getElementById('footer-clients');
+let footerContact = document.getElementById('footer-contact');
+let footerNewsletter = document.getElementById('footer-newsletter-links');
+let footerEmail = document.getElementById('footer-email-label');
+let footerFollowUs = document.getElementById('footer-follow-us');
 
 language.addEventListener('change', (e) => {
   setLanguage(e.target.value);
@@ -238,6 +269,31 @@ const setLanguage = (lang) => {
     ans2.innerText = arabic.faqs.ansers[1];
     qsn3.innerText = arabic.faqs.questions[2];
     ans3.innerText = arabic.faqs.ansers[2];
+
+    // Contact
+    contactHeading.innerText = arabic.contact.heading;
+    contactDesc.innerText = arabic.contact.desc;
+    contactFirstNameLabel.innerText = arabic.contact.labels[0];
+    contactLastNameLabel.innerText = arabic.contact.labels[1];
+    contactEmailLabel.innerText = arabic.contact.labels[2];
+    contactMobileLabel.innerText = arabic.contact.labels[3];
+    contactMessageLabel.innerText = arabic.contact.labels[4];
+    contactSubmitBtnLabel.innerText = arabic.contact.labels[5];
+
+    // Footer
+    footerHeading.innerText = arabic.footer.heading;
+    footerDesc.innerText = arabic.footer.desc;
+    footerQuickLink.innerText = arabic.footer.subheading[0];
+    footerHome.innerText = arabic.navbar[0];
+    footerAbout.innerText = arabic.navbar[1];
+    footerProcess.innerText = arabic.navbar[2];
+    footerServices.innerText = arabic.navbar[3];
+    footerJob.innerText = arabic.navbar[4];
+    footerClients.innerText = arabic.navbar[5];
+    footerContact.innerText = arabic.navbar[6];
+    footerNewsletter.innerText = arabic.footer.subheading[1];
+    footerFollowUs.innerText = arabic.footer.subheading[2];
+    footerEmail.innerText = arabic.footer.subheading[3];
   } else if (lang == 'en') {
     let english = translation.en;
 
@@ -288,5 +344,15 @@ const setLanguage = (lang) => {
     ans2.innerText = english.faqs.ansers[1];
     qsn3.innerText = english.faqs.questions[2];
     ans3.innerText = english.faqs.ansers[2];
+
+    // Contact
+    contactHeading.innerText = english.contact.heading;
+    contactDesc.innerText = english.contact.desc;
+    contactFirstNameLabel.innerText = english.contact.labels[0];
+    contactLastNameLabel.innerText = english.contact.labels[1];
+    contactEmailLabel.innerText = english.contact.labels[2];
+    contactMobileLabel.innerText = english.contact.labels[3];
+    contactMessageLabel.innerText = english.contact.labels[4];
+    contactSubmitBtnLabel.innerText = english.contact.labels[5];
   }
 };
