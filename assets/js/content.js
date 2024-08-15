@@ -159,6 +159,30 @@ let aboutListDesc3 = document.getElementById('about-list-desc3');
 let aboutListHeading4 = document.getElementById('about-list-heading4');
 let aboutListDesc4 = document.getElementById('about-list-desc4');
 
+// Counts
+let count1 = document.getElementById('count1');
+let count2 = document.getElementById('count2');
+let count3 = document.getElementById('count3');
+let count4 = document.getElementById('count4');
+
+// Clients
+let clientHeading = document.getElementById('client-heading');
+let clientDesc = document.getElementById('client-desc');
+
+// FAQs
+let faqHeading = document.getElementById('faq-heading');
+let faqDesc = document.getElementById('faq-desc');
+let qsn1 = document.getElementById('qsn1');
+let ans1 = document.getElementById('ans1');
+let qsn2 = document.getElementById('qsn2');
+let ans2 = document.getElementById('ans2');
+let qsn3 = document.getElementById('qsn3');
+let ans3 = document.getElementById('ans3');
+
+// Contact
+let contactHeading = document.getElementById('contact-heading');
+let contactDesc = document.getElementById('contact-desc');
+
 language.addEventListener('change', (e) => {
   setLanguage(e.target.value);
   // console.log(e.target.value);
@@ -166,53 +190,103 @@ language.addEventListener('change', (e) => {
 
 const setLanguage = (lang) => {
   if (lang == 'ar') {
+    let arabic = translation.ar;
     // Navbar in Arabic
-    homeNav.innerText = translation.ar.navbar[0];
-    aboutNav.innerText = translation.ar.navbar[1];
-    processNav.innerText = translation.ar.navbar[2];
-    servicesNav.innerText = translation.ar.navbar[3];
-    jobNav.innerText = translation.ar.navbar[4];
-    clientNav.innerText = translation.ar.navbar[5];
-    contactNav.innerText = translation.ar.navbar[6];
+    homeNav.innerText = arabic.navbar[0];
+    aboutNav.innerText = arabic.navbar[1];
+    processNav.innerText = arabic.navbar[2];
+    servicesNav.innerText = arabic.navbar[3];
+    jobNav.innerText = arabic.navbar[4];
+    clientNav.innerText = arabic.navbar[5];
+    contactNav.innerText = arabic.navbar[6];
 
     // About
-    aboutHeading.innerText = translation.ar.about.heading;
-    aboutDesc.innerText = translation.ar.about.desc;
-    aboutSubheading1.innerText = translation.ar.about.subheading[0];
-    aboutDesc1.innerText = translation.ar.about.subdesc[0];
-    aboutSubheading2.innerText = translation.ar.about.subheading[1];
-    aboutDesc2.innerText = translation.ar.about.subdesc[1];
-    aboutSubheading3.innerText = translation.ar.about.subheading[2];
-    aboutDesc3.innerText = translation.ar.about.subdesc[2];
-    aboutSubheading4.innerText = translation.ar.about.subheading[3];
-    aboutListHeading1.innerText = translation.ar.about.listheading[0];
-    aboutListDesc1.innerText = translation.ar.about.listdesc[0];
-    aboutListHeading2.innerText = translation.ar.about.listheading[1];
-    aboutListDesc2.innerText = translation.ar.about.listdesc[1];
-    aboutListHeading3.innerText = translation.ar.about.listheading[2];
-    aboutListDesc3.innerText = translation.ar.about.listdesc[2];
-    aboutListHeading4.innerText = translation.ar.about.listheading[3];
-    aboutListDesc4.innerText = translation.ar.about.listdesc[3];
-    console.log(translation.ar.about.listdesc[3]);
+    aboutHeading.innerText = arabic.about.heading;
+    aboutDesc.innerText = arabic.about.desc;
+    aboutSubheading1.innerText = arabic.about.subheading[0];
+    aboutDesc1.innerText = arabic.about.subdesc[0];
+    aboutSubheading2.innerText = arabic.about.subheading[1];
+    aboutDesc2.innerText = arabic.about.subdesc[1];
+    aboutSubheading3.innerText = arabic.about.subheading[2];
+    aboutDesc3.innerText = arabic.about.subdesc[2];
+    aboutSubheading4.innerText = arabic.about.subheading[3];
+    aboutListHeading1.innerText = arabic.about.listheading[0];
+    aboutListDesc1.innerText = arabic.about.listdesc[0];
+    aboutListHeading2.innerText = arabic.about.listheading[1];
+    aboutListDesc2.innerText = arabic.about.listdesc[1];
+    aboutListHeading3.innerText = arabic.about.listheading[2];
+    aboutListDesc3.innerText = arabic.about.listdesc[2];
+    aboutListHeading4.innerText = arabic.about.listheading[3];
+    aboutListDesc4.innerText = arabic.about.listdesc[3];
+
+    // Counts
+    count1.innerText = arabic.counts[0];
+    count2.innerText = arabic.counts[1];
+    count3.innerText = arabic.counts[2];
+    count4.innerText = arabic.counts[3];
+
+    // Clients
+    clientHeading.innerText = arabic.clients.heading;
+    clientDesc.innerText = arabic.clients.desc;
+
+    // FAQs
+    faqHeading.innerText = arabic.faqs.heading;
+    faqDesc.innerText = arabic.faqs.desc;
+    qsn1.innerText = arabic.faqs.questions[0];
+    ans1.innerText = arabic.faqs.ansers[0];
+    qsn2.innerText = arabic.faqs.questions[1];
+    ans2.innerText = arabic.faqs.ansers[1];
+    qsn3.innerText = arabic.faqs.questions[2];
+    ans3.innerText = arabic.faqs.ansers[2];
   } else if (lang == 'en') {
+    let english = translation.en;
+
     // Navbar in English
-    homeNav.innerText = translation.en.navbar[0];
-    aboutNav.innerText = translation.en.navbar[1];
-    processNav.innerText = translation.en.navbar[2];
-    servicesNav.innerText = translation.en.navbar[3];
-    jobNav.innerText = translation.en.navbar[4];
-    clientNav.innerText = translation.en.navbar[5];
-    contactNav.innerText = translation.en.navbar[6];
+    homeNav.innerText = english.navbar[0];
+    aboutNav.innerText = english.navbar[1];
+    processNav.innerText = english.navbar[2];
+    servicesNav.innerText = english.navbar[3];
+    jobNav.innerText = english.navbar[4];
+    clientNav.innerText = english.navbar[5];
+    contactNav.innerText = english.navbar[6];
 
     // About
-    aboutHeading.innerText = translation.en.about.heading;
-    aboutDesc.innerText = translation.en.about.desc;
-    aboutSubheading1.innerText = translation.en.about.subheading[0];
-    aboutDesc1.innerText = translation.en.about.subdesc[0];
-    aboutSubheading2.innerText = translation.en.about.subheading[1];
-    aboutDesc2.innerText = translation.en.about.subdesc[1];
-    aboutSubheading3.innerText = translation.en.about.subheading[2];
-    aboutDesc3.innerText = translation.en.about.subdesc[2];
-    aboutSubheading4.innerText = translation.en.about.subheading[3];
+    aboutHeading.innerText = english.about.heading;
+    aboutDesc.innerText = english.about.desc;
+    aboutSubheading1.innerText = english.about.subheading[0];
+    aboutDesc1.innerText = english.about.subdesc[0];
+    aboutSubheading2.innerText = english.about.subheading[1];
+    aboutDesc2.innerText = english.about.subdesc[1];
+    aboutSubheading3.innerText = english.about.subheading[2];
+    aboutDesc3.innerText = english.about.subdesc[2];
+    aboutSubheading4.innerText = english.about.subheading[3];
+    aboutListHeading1.innerText = english.about.listheading[0];
+    aboutListDesc1.innerText = english.about.listdesc[0];
+    aboutListHeading2.innerText = english.about.listheading[1];
+    aboutListDesc2.innerText = english.about.listdesc[1];
+    aboutListHeading3.innerText = english.about.listheading[2];
+    aboutListDesc3.innerText = english.about.listdesc[2];
+    aboutListHeading4.innerText = english.about.listheading[3];
+    aboutListDesc4.innerText = english.about.listdesc[3];
+
+    // Counts
+    count1.innerText = english.counts[0];
+    count2.innerText = english.counts[1];
+    count3.innerText = english.counts[2];
+    count4.innerText = english.counts[3];
+
+    // Clients
+    clientHeading.innerText = english.clients.heading;
+    clientDesc.innerText = english.clients.desc;
+
+    // FAQs
+    faqHeading.innerText = english.faqs.heading;
+    faqDesc.innerText = english.faqs.desc;
+    qsn1.innerText = english.faqs.questions[0];
+    ans1.innerText = english.faqs.ansers[0];
+    qsn2.innerText = english.faqs.questions[1];
+    ans2.innerText = english.faqs.ansers[1];
+    qsn3.innerText = english.faqs.questions[2];
+    ans3.innerText = english.faqs.ansers[2];
   }
 };

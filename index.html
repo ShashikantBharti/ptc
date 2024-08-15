@@ -177,7 +177,7 @@
             <li class="d-flex align-items-start mb-2">
               <i class="fas fa-check text-success me-2"></i>
               <p><strong id="about-list-heading3">Partnership:</strong>
-                <span class="about-list-desc3">We build lasting relationships based on trust and collaboration.</span>
+                <span id="about-list-desc3">We build lasting relationships based on trust and collaboration.</span>
               </p>
             </li>
             <li class="d-flex align-items-start mb-2">
@@ -201,25 +201,25 @@
         <div class="col-md-6 col-lg-3">
           <div class="text-center">
             <span id="num1">789</span>
-            <p>Completed Project</p>
+            <p id="count1">Completed Project</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="text-center">
             <span id="num2">1258</span>
-            <p>Happy Customers</p>
+            <p id="count2">Happy Customers</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="text-center">
             <span id="num3">1300</span>
-            <p>Manpower Recruited</p>
+            <p id="count3">Manpower Recruited</p>
           </div>
         </div>
         <div class="col-md-6 col-lg-3">
           <div class="text-center">
             <span id="num4">10</span>
-            <p>Country Presence</p>
+            <p id="count4">Country Presence</p>
           </div>
         </div>
       </div>
@@ -231,8 +231,8 @@
   <section id="clients" class="py-5">
     <div class="container">
       <div class="text-center py-3">
-        <h2 class="section-heading mb-3">Our Clients</h2>
-        <p>
+        <h2 class="section-heading mb-3" id="client-heading">Our Clients</h2>
+        <p id="client-desc">
           We have worked with a diverse range of clients across various industries.
         </p>
       </div>
@@ -263,8 +263,8 @@
   <section id="faqs" class="py-5">
     <div class="container">
       <div class="text-center py-3">
-        <h2 class="section-heading mb-3">FAQs</h2>
-        <p>
+        <h2 class="section-heading mb-3" id="faq-heading">FAQs</h2>
+        <p id="faq-desc">
           Find your answer and if any doubt contact me anytime
         </p>
       </div>
@@ -272,12 +272,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
+              aria-expanded="true" aria-controls="collapseOne" id="qsn1">
               How can I get in touch with Premium Travel Consultant ?
             </button>
           </h2>
           <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body" id="ans1">
               You can contact us via phone at 0522 - 4626555 | 4654555, email us at ptc4lucknow@gmail.com, or visit our
               office
               at 789 Career Avenue, Suite 101, Lucknow City.
@@ -287,12 +287,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="qsn2">
               Do you offer remote services?
             </button>
           </h2>
           <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body" id="ans2">
               Yes, we offer remote services for both job seekers and employers. Our team can provide consultations and
               support virtually to accommodate your needs.
             </div>
@@ -301,12 +301,12 @@
         <div class="accordion-item">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="qsn3">
               How can I stay updated with Premium Travel Consultant latest news and job openings?
             </button>
           </h2>
           <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-            <div class="accordion-body">
+            <div class="accordion-body" id="ans3">
               You can subscribe to our newsletter and follow us on LinkedIn, Facebook, and Twitter to stay updated with
               the latest career tips, job openings, and industry insights.
             </div>
@@ -321,8 +321,8 @@
   <section id="contact" class="py-5">
     <div class="container">
       <div class="text-center py-3">
-        <h2 class="section-heading mb-3">Contact Us</h2>
-        <p>
+        <h2 class="section-heading mb-3" id="contact-heading">Contact Us</h2>
+        <p id="contact-desc">
           Get in touch with us to learn more about our services and how we can help
         </p>
       </div>
@@ -336,30 +336,30 @@
               <div class="col-md-6">
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="floatingFirstName" placeholder="John">
-                  <label for="floatingFirstName">First Name</label>
+                  <label for="floatingFirstName" id="contact-label-first-name">First Name</label>
                 </div>
               </div>
               <div class="col-md-6">
                 <div class="form-floating mb-3">
                   <input type="text" class="form-control" id="floatingLastName" placeholder="Doe">
-                  <label for="floatingLastName">Last Name</label>
+                  <label for="floatingLastName" id="contact-label-last-name">Last Name</label>
                 </div>
               </div>
             </div>
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="floatingEmail" placeholder="Doe">
-              <label for="floatingEmail">Email</label>
+              <label for="floatingEmail" id="contact-label-email">Email</label>
             </div>
             <div class="form-floating mb-3">
               <input type="text" class="form-control" id="floatingMobile" placeholder="Doe">
-              <label for="floatingMobile">Mobile Number</label>
+              <label for="floatingMobile" id="contact-label-mobile">Mobile Number</label>
             </div>
             <div class="form-floating mb-3">
               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
                 style="height: 200px"></textarea>
-              <label for="floatingTextarea2">Messsage</label>
+              <label for="floatingTextarea2" id="contact-label-message">Messsage</label>
             </div>
-            <button type="submit" class="btn btn-primary btn-lg">Submit <i
+            <button type="submit" class="btn btn-primary btn-lg" id="contact-label-submit">Submit <i
                 class="fa-regular fa-paper-plane"></i></button>
           </form>
         </div>
