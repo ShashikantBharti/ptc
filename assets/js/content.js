@@ -65,7 +65,12 @@ const translation = {
     footer: {
       heading: 'Premium Travel Consultant',
       desc: 'At Premium Travel Consultant, we are dedicated to connecting top talent with leading companies.',
-      subheading: ['Quick Links', 'Subscribe Our Newsletter', 'Follow Us On:', 'Your Email'],
+      subheading: [
+        'Quick Links',
+        'Subscribe Our Newsletter',
+        'Follow Us On:',
+        'Your Email',
+      ],
     },
   },
   ar: {
@@ -134,7 +139,12 @@ const translation = {
     footer: {
       heading: 'مستشار السفر بريميوم',
       desc: 'في مستشار السفر بريميوم، نحن ملتزمون بربط أفضل المواهب مع الشركات الرائدة.',
-      subheading: ['روابط سريعة', 'اشترك في نشرتنا الإخبارية', 'تابعنا على:', 'بريدك الإلكتروني'],
+      subheading: [
+        'روابط سريعة',
+        'اشترك في نشرتنا الإخبارية',
+        'تابعنا على:',
+        'بريدك الإلكتروني',
+      ],
     },
   },
 };
@@ -354,5 +364,20 @@ const setLanguage = (lang) => {
     contactMobileLabel.innerText = english.contact.labels[3];
     contactMessageLabel.innerText = english.contact.labels[4];
     contactSubmitBtnLabel.innerText = english.contact.labels[5];
+
+    // Footer
+    footerHeading.innerText = english.footer.heading;
+    footerDesc.innerText = english.footer.desc;
+    footerQuickLink.innerText = english.footer.subheading[0];
+    footerHome.innerText = english.navbar[0];
+    footerAbout.innerText = english.navbar[1];
+    footerProcess.innerText = english.navbar[2];
+    footerServices.innerText = english.navbar[3];
+    footerJob.innerText = english.navbar[4];
+    footerClients.innerText = english.navbar[5];
+    footerContact.innerText = english.navbar[6];
+    footerNewsletter.innerText = english.footer.subheading[1];
+    footerFollowUs.innerText = english.footer.subheading[2];
+    footerEmail.innerText = english.footer.subheading[3];
   }
 };
